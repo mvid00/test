@@ -20,27 +20,27 @@ PAGE_NO = 1
 
 
 class MirrorStatus:
-    STATUS_UPLOADING = "꧁𓊈𒆜𝖀𝖕𝖑𝖔𝖆𝖉𝖎𝖓𝖌𒆜𓊉꧂...📤"
-    STATUS_DOWNLOADING = "꧁𓊈𒆜𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠𒆜𓊉꧂...📥"
-    STATUS_CLONING = "꧁𓊈𒆜🅲🅻🅾🅽🅸🅽🅶𒆜𓊉꧂.☢️♻️"
-    STATUS_WAITING = "꧁𓊈𒆜🆀🆄🅴🆄🅴🅳𒆜𓊉꧂...💤"
-    STATUS_FAILED = "Failed 🚫. Cleaning Download..."
-    STATUS_PAUSE = "Paused...⛔️"
-    STATUS_ARCHIVING = "꧁𓊈𒆜🅰🆁🅲🅷🅸🆅🅸🅽🅶𒆜𓊉꧂.⚜️🔐"
-    STATUS_EXTRACTING = "꧁𓊈𒆜🅴🆇🆃🆁🅰🅲🆃🅸🅽🅶𒆜𓊉꧂...📂"
-    STATUS_SPLITTING = "Splitting...✂️"
-    STATUS_CHECKING = "CheckingUp...📝"
-    STATUS_SEEDING = "Seeding...🌧"
+    STATUS_UPLOADING = "𓊈𒆜𝖀𝖕𝖑𝖔𝖆𝖉𝖎𝖓𝖌𒆜𓊉...📤"
+    STATUS_DOWNLOADING = "𓊈𒆜𝕯𝖔𝖜𝖓𝖑𝖔𝖆𝖉𝖎𝖓𝖌𒆜𓊉...📥"
+    STATUS_CLONING = "𓊈𒆜𝕮𝖑𝖔𝖓𝖎𝖓𝖌𒆜𓊉.☢️♻️"
+    STATUS_WAITING = "𓊈𒆜𝕼𝖚𝖊𝖚𝖊𝖉𒆜𓊉...💤"
+    STATUS_FAILED = "𓊈𒆜𝕱𝖆𝖎𝖑𝖊𝖉 🚫. 𝕮𝖑𝖊𝖆𝖓𝖎𝖓𝖌 𝕯𝖔𝖜𝖓𝖑𝖔𝖆𝖉𒆜𓊉..."
+    STATUS_PAUSE = "𓊈𒆜𝕻𝖆𝖚𝖘𝖊𝖉𒆜𓊉...⛔️"
+    STATUS_ARCHIVING = "𓊈𒆜🅰🆁🅲🅷🅸🆅🅸🅽🅶𒆜𓊉.⚜️🔐"
+    STATUS_EXTRACTING = "𓊈𒆜🅴🆇🆃🆁🅰🅲🆃🅸🅽🅶𒆜𓊉...📂"
+    STATUS_SPLITTING = "𓊈𒆜𝕾𝖕𝖑𝖎𝖙𝖙𝖎𝖓𝖌𒆜𓊉...✂️"
+    STATUS_CHECKING = "𓊈𒆜𝕮𝖍𝖊𝖈𝖐𝖎𝖓𝖌𝖀𝖕𒆜𓊉...📝"
+    STATUS_SEEDING = "𓊈𒆜𝕾𝖊𝖊𝖉𝖎𝖓𝖌𒆜𓊉...🌧"
 class EngineStatus:
-    STATUS_ARIA = "Aria2c"
-    STATUS_GD = "Google Api"
-    STATUS_MEGA = "Mega Api"
-    STATUS_QB = "Bittorrent"
-    STATUS_TG = "Pyrogram"
-    STATUS_YT = "YT-dlp"
-    STATUS_EXT = "pExtract"
-    STATUS_SPLIT = "FFmpeg"
-    STATUS_ZIP = "p7zip"
+    STATUS_ARIA = "🅰🆁🅸🅰2🅲"
+    STATUS_GD = "🅶🅾🅾🅶🅻🅴 🅰🅿🅸"
+    STATUS_MEGA = "🅼🅴🅶🅰 🅰🅿🅸"
+    STATUS_QB = "🅱🅸🆃🆃🅾🆁🆁🅴🅽🆃"
+    STATUS_TG = "🅿🆈🆁🅾🅶🆁🅰🅼"
+    STATUS_YT = "🆈🆃-🅳🅻🅿"
+    STATUS_EXT = "🅿🅴🆇🆃🆁🅰🅲🆃"
+    STATUS_SPLIT = "🅵🅵🅼🅿🅴🅶"
+    STATUS_ZIP = "🅿7🆉🅸🅿"
 
 SIZE_UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
 
@@ -118,7 +118,7 @@ def get_progress_bar_string(status):
     p = min(max(p, 0), 100)
     cFull = p // 8
     p_str = "█" * cFull
-    p_str += "▓" * (12 - cFull)
+    p_str += "░" * (12 - cFull)
     p_str = f"[{p_str}]"
     return p_str
 
