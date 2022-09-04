@@ -11,7 +11,7 @@ def getCommand(name: str, command: str):
 
 class _BotCommands:
     def __init__(self):
-        self.StartCommand = getCommand(f'START_CMD', f'start0{CMD_INDEX}')
+        self.StartCommand = getCommand(f'START_CMD', f'start{CMD_INDEX}')
         self.MirrorCommand = getCommand('MIRROR_CMD', f'mirror3{CMD_INDEX}')
         self.UnzipMirrorCommand = getCommand('UNZIP_CMD', f'unzipmirror3{CMD_INDEX}')
         self.ZipMirrorCommand = getCommand('ZIP_CMD', f'zipmirror3{CMD_INDEX}')
