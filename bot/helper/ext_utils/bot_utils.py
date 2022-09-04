@@ -20,8 +20,8 @@ PAGE_NO = 1
 
 
 class MirrorStatus:
-    STATUS_UPLOADING = "꧁𓊈𒆜🆄🅿🅻🅾🅰🅳🅸🅽🅶𒆜𓊉꧂...📤"
-    STATUS_DOWNLOADING = "꧁𓊈𒆜🅳🅾🆆🅽🅻🅾🅰🅳🅸🅽🅶𒆜𓊉꧂...📥"
+    STATUS_UPLOADING = "꧁𓊈𒆜𝖀𝖕𝖑𝖔𝖆𝖉𝖎𝖓𝖌𒆜𓊉꧂...📤"
+    STATUS_DOWNLOADING = "꧁𓊈𒆜𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠𒆜𓊉꧂...📥"
     STATUS_CLONING = "꧁𓊈𒆜🅲🅻🅾🅽🅸🅽🅶𒆜𓊉꧂.☢️♻️"
     STATUS_WAITING = "꧁𓊈𒆜🆀🆄🅴🆄🅴🅳𒆜𓊉꧂...💤"
     STATUS_FAILED = "Failed 🚫. Cleaning Download..."
