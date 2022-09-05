@@ -166,9 +166,11 @@ def get_readable_message():
                 msg += f"\n<b><a href='{download.message.link}'>Source</a>:</b> {uname} | <b>Id :</b> <code>{download.message.from_user.id}</code>"
             else:
                 if EMOJI_THEME is True:
+                    msg += f"\n<b>╰❎ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
                     msg += f"\n<b>├⛓️ Engine :</b> {download.eng()}"
                     msg += f"\n<b>╰📐 Size: </b>{download.size()}"
                 else:
+                    msg += f"\n<b>╰ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
                     msg += f"\n<b>├ Engine :</b> {download.eng()}"
                     msg += f"\n<b>╰ Size: </b>{download.size()}"
             msg += f"\n<b>_____________________________________</b>"
