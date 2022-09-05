@@ -211,7 +211,7 @@ def get_readable_message():
             buttons = ButtonMaker()
             buttons.sbutton("↩️Previous", "status pre")
             buttons.sbutton("↪️Next", "status nex")
-            buttons.sbutton("Statistics", str(FOUR))
+            buttons.sbutton("☣️Statistics☢️", str(FOUR))
             button = buttons.build_menu(2)
             return msg + bmsg, button
         return msg + bmsg, sbutton
@@ -352,10 +352,12 @@ def bot_sys_stats():
             elif 'MB/s' in spd:
                 upspeed_bytes += float(spd.split('M')[0]) * 1048576
     stats = f"""
-USED : {used} | FREE :{free}
-SENT : {sent} | RECV : {recv}\n
-DL: {num_active} | UP : {num_upload} | SPLIT : {num_split}
-ZIP : {num_archi} | UNZIP : {num_extract} | TOTAL : {tasks} 
+CPU : {cpu}% | RAM : {mem}%
+DL : {num_active} | UP : {num_upload} | SPLIT : {num_split}
+ZIP : {num_archi} | UNZIP : {num_extract} | TOTAL : {tasks}
+Limits : T/D : {TORRENT_DIRECT_LIMIT}GB | Z/U : {ZIP_UNZIP_LIMIT}GB
+                    L : {LEECH_LIMIT}GB | M : {MEGA_LIMIT}GB
+Made with ❤️ by {CREDIT_NAME}
 """
     return stats
 dispatcher.add_handler(
