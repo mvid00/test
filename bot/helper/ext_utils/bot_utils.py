@@ -163,8 +163,14 @@ def get_readable_message():
                 msg += f"\n<b>├ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
                 msg += f"\n<b>Size: </b>{download.size()}"
             if download.message.chat.type != 'private':
-                uname =download.message.from_user.first_name
-                msg += f"\n<b><a href='{download.message.link}'>Source</a>:</b> {uname} | <b>Id :</b> <code>{download.message.from_user.id}</code>"
+                try:
+                        chatid = str(download.message.chat.id)[4:]
+                        if EMOJI_THEME is True:
+                            msg += f'\n<b>├🌐 Source: </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
+                            msg += f"\n<b>╰❎ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
+                        else:
+                            msg += f'\n<b>├ Source: </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
+                            msg += f"\n<b>╰ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>" 
             else:
                 msg += ''
             msg += f"\n<code>/{BotCommands.CancelMirror} {download.gid()}</code>"
