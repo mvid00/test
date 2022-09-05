@@ -164,10 +164,10 @@ def get_readable_message():
                 msg += f"\n<b>Size: </b>{download.size()}"
             if download.message.chat.type != 'private':
                 uname =download.message.from_user.first_name
-                msg += f'\n<b>├ Source: </b><a href="https://t.me/c/{uname}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
+                msg += f'\n<b>├👤 Source: </b><a href="https://t.me/c/{uname}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
             else:
                 msg += ''
-            msg += f"\n<b>╰ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
+            msg += f"\n<b>╰❎ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
             msg += f"\n<b>_____________________________</b>"
             msg += "\n\n"
             if STATUS_LIMIT is not None and index == STATUS_LIMIT:
