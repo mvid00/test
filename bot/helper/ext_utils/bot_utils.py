@@ -168,6 +168,9 @@ def get_readable_message():
                     msg += f" | <b> Time: </b>{download.seeding_time()}"
                     msg += f"\n<b>├ Elapsed: </b>{get_readable_time(time() - download.message.date.timestamp())}"
                     msg += f"\n<b>╰ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
+                if download.message.chat.type != 'private':
+                uname =download.message.from_user.first_name
+                msg += f"\n<b><a href='{download.message.link}'>Source</a>:</b> {uname} | <b>Id :</b> <code>{download.message.from_user.id}</code>"
             else:
                 if EMOJI_THEME is True:
                     msg += f"\n<b>├⛓️ Engine :</b> {download.eng()}"
