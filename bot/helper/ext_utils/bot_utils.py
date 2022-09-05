@@ -32,15 +32,15 @@ class MirrorStatus:
     STATUS_CHECKING = "𓊈𒆜𝕮𝖍𝖊𝖈𝖐𝖎𝖓𝖌𝖀𝖕𒆜𓊉...📝"
     STATUS_SEEDING = "𓊈𒆜𝕾𝖊𝖊𝖉𝖎𝖓𝖌𒆜𓊉...🌧"
 class EngineStatus:
-    STATUS_ARIA = "🅰🆁🅸🅰2🅲"
-    STATUS_GD = "🅶🅾🅾🅶🅻🅴 🅰🅿🅸"
-    STATUS_MEGA = "🅼🅴🅶🅰 🅰🅿🅸"
-    STATUS_QB = "🅱🅸🆃🆃🅾🆁🆁🅴🅽🆃"
-    STATUS_TG = "🅿🆈🆁🅾🅶🆁🅰🅼"
-    STATUS_YT = "🆈🆃-🅳🅻🅿"
-    STATUS_EXT = "🅿🅴🆇🆃🆁🅰🅲🆃"
-    STATUS_SPLIT = "🅵🅵🅼🅿🅴🅶"
-    STATUS_ZIP = "🅿7🆉🅸🅿"
+    STATUS_ARIA = "Aria2c v1.35.0"
+    STATUS_GD = "Google Api v2.51.0"
+    STATUS_MEGA = "MegaSDK v3.12.0"
+    STATUS_QB = "qBittorrent v4.3.9"
+    STATUS_TG = "Pyrogram v2.0.27"
+    STATUS_YT = "YT-dlp v22.5.18"
+    STATUS_EXT = "Extract | pExtract"
+    STATUS_SPLIT = "FFmpeg v2.9.1"
+    STATUS_ZIP = "p7zip v16.02"
 
 SIZE_UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
 
