@@ -169,8 +169,9 @@ def get_readable_message():
                         msg += f'\n<b>├👤 User:</b> ️<code>{download.message.from_user.first_name}</code> | <b>Id:</b> <code>{download.message.from_user.id}</code>'
                         msg += f"\n<b>╰❎ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
                     else:
-                        msg += f'\n<b>├ User:</b> ️<code>{download.message.from_user.first_name}</code> | <b>Id:</b> <code>{download.message.from_user.id}</code>'
-                        msg += f"\n<b>╰ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
+                msg += ''
+            msg += f"\n<code>/{BotCommands.CancelMirror} {download.gid()}</code>"
+            msg += "\n\n"
             else:
                 if EMOJI_THEME is True:
                     msg += f"\n<b>├⛓️ Engine :</b> {download.eng()}"
