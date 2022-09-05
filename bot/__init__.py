@@ -561,8 +561,8 @@ try:
     if len(START_BTN1_NAME) == 0 or len(START_BTN1_URL) == 0:
         raise KeyError
 except:
-    START_BTN1_NAME = 'Channel✅'
-    START_BTN1_URL = 'https://t.me/moviehub24hr'
+    START_BTN1_NAME = 'Log Channel✅'
+    START_BTN1_URL = 'https://t.me/moviehubbdleech'
 
 try:
     START_BTN2_NAME = getConfig('START_BTN2_NAME')
@@ -570,7 +570,7 @@ try:
     if len(START_BTN2_NAME) == 0 or len(START_BTN2_URL) == 0:
         raise KeyError
 except:
-    START_BTN2_NAME = 'Support Group'
+    START_BTN2_NAME = 'Support Group✅'
     START_BTN2_URL = 'https://t.me/moviehubbd'
 updater = tgUpdater(token=BOT_TOKEN, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
 bot = updater.bot
