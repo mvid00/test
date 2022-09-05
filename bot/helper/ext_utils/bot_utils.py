@@ -17,7 +17,7 @@ URL_REGEX = r"(?:(?:https?|ftp):\/\/)?[\w/\-?=%.]+\.[\w/\-?=%.]+"
 
 COUNT = 0
 PAGE_NO = 1
-
+EMOJI_THEME=True 
 
 class MirrorStatus:
     STATUS_UPLOADING = "𓊈𒆜𝖀𝖕𝖑𝖔𝖆𝖉𝖎𝖓𝖌𒆜𓊉...📤"
@@ -136,11 +136,14 @@ def get_readable_message():
             msg += f"<b>Name:</b> <code>{escape(str(download.name()))}</code>"
             msg += f"\n<b>Status:</b> <i>{download.status()}</i> | {download.eng()}"
             if download.status() not in [MirrorStatus.STATUS_SPLITTING, MirrorStatus.STATUS_SEEDING]:
-                msg += f"\n{get_progress_bar_string(download)} {download.progress()}"
-                msg += f"\n<b>Processed:</b> {get_readable_file_size(download.processed_bytes())} of {download.size()}"
-                msg += f"\n<b>Speed:</b> {download.speed()} | <b>ETA:</b> {download.eta()}"
-                msg += f"\n<b>Time Elapsed: </b>{get_readable_time(time() - download.message.date.timestamp())}"
-                if hasattr(download, 'seeders_num'):
+                if EMOJI_THEME is True:
+                    msg += f"\n<b>├</b>{get_progress_bar_string(download)} {download.progress()}"
+                    msg += f"\n<b>├🔄 Processed:</b> {get_readable_file_size(download.processed_bytes())} of {download.size()}"
+                    msg += f"\n<b>├⚡ Speed:</b> {download.speed()}"
+                    msg += f"\n<b>├⏳ ETA:</b> {download.eta()}"
+                    msg += f"\n<b>├⏳ Elapsed: </b>{get_readable_time(time() - download.message.date.timestamp())}"
+                    msg += f"\n<b>├⛓️ Engine :</b> {download.eng()}"
+                    msg += f"\n<b>├⚠️ Warn: </b> <code>/warn {download.message.from_user.id}</code>"
                     try:
                         msg += f"\n<b>Seeders:</b> {download.seeders_num()} | <b>Leechers:</b> {download.leechers_num()}"
                     except:
