@@ -149,7 +149,7 @@ def get_readable_message():
                            if EMOJI_THEME is True:
                               msg += f"\n<b>├🌱 Seeders:</b> {download.seeders_num()}"
                               msg += f"\n<b>├🐌 Leechers:</b> {download.leechers_num()}"
-                              msg += f"\n<b>├👤Source :</b><a href="https://t.me/c/{uname}/{download.message.message_id}">{download.message.from_user.first_name}</a>"
+                              msg += f"\n<b>├👤Source :</b> ️<code>{download.message.from_user.first_name}</code>"
                        except:
                               pass
 
