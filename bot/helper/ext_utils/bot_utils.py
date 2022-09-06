@@ -148,7 +148,7 @@ def get_readable_message():
                        try:
                            if EMOJI_THEME is True:
                               msg += f"\n<b>├🌱 Seeders:</b> {download.seeders_num()} | <b>🐌 Lee:</b> {download.leechers_num()}"
-                              msg += f"\n<b>├🧿Creator:</b> {MOVIEHUBBD}"
+                              msg += f"\n<b>├🧿Creator Id :</b> <code>{download.message.from_user.id}</code>"
                        except:
                               pass
 
