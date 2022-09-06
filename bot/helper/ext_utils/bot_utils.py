@@ -147,7 +147,7 @@ def get_readable_message():
                     if hasattr(download, 'seeders_num'):
                        try:
                            if EMOJI_THEME is True:
-                              msg += f"\n<b>├🌱 Seeders:</b> {download.seeders_num()} | <b>🐌 Leechers:</b> {download.leechers_num()}"
+                              msg += f"\n<b>├🌱 Seeders:</b> {download.seeders_num()} | <b>🐌 Lee:</b> {download.leechers_num()}"
                               msg += f"\n<b>├🧿 To Select:</b> <code>/{BotCommands.BtSelectCommand} {download.gid()}</code>"
                        except:
                               pass
