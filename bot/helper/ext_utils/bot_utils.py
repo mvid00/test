@@ -145,7 +145,9 @@ def get_readable_message():
                     msg += f"\n<b>├⚙️ Engine :</b> {download.eng()}"
                     msg += f"\n<b>├⚠️ Warn: </b> <code>/warn {download.message.from_user.id}</code>"
                     try:
-                        msg += f"\n<b>Seeders:</b> {download.seeders_num()} | <b>Leechers:</b> {download.leechers_num()}"
+                        if EMOJI_THEME is True:
+                            msg += f"\n<b>├🌱 Seeders:</b> {download.seeders_num()} | <b>🐌 Leechers:</b> {download.leechers_num()}"
+                            msg += f"\n<b>├🧿 To Select:</b> <code>/{BotCommands.BtSelectCommand} {download.gid()}</code>"
                     except:
                         pass
 
