@@ -162,6 +162,11 @@ def get_readable_message():
             else:
                 msg += f"\n<b>├ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
                 msg += f"\n<b>Size: </b>{download.size()}"
+                if hasattr(download, 'seeders_num'):
+                    try:
+                        if EMOJI_THEME is True:
+                            msg += f"\n<b>├🌱 Seeders:</b> {download.seeders_num()} | <b>🐌 Leechers:</b> {download.leechers_num()}"
+                            msg += f"\n<b>├🧿 To Select:</b> <code>/{BotCommands.BtSelectCommand} {download.gid()}</code>"
             if download.message.chat.type != 'private':
                 uname =download.message.from_user.first_name
                 msg += f'\n<b>├👤 Source: </b><a href="https://t.me/c/{uname}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
