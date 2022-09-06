@@ -149,8 +149,8 @@ def get_readable_message():
                            if EMOJI_THEME is True:
                               msg += f"\n<b>├🌱 Seeders:</b> {download.seeders_num()} | <b>🐌 Leechers:</b> {download.leechers_num()}"
                               msg += f"\n<b>├🧿 To Select:</b> <code>/{BotCommands.BtSelectCommand} {download.gid()}</code>"
-                    except:
-                        pass
+                       except:
+                              pass
 
             elif download.status() == MirrorStatus.STATUS_SEEDING:
                 if EMOJI_THEME is True:
