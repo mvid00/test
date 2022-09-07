@@ -168,6 +168,7 @@ def get_readable_message():
                 msg += f"\n<b>Size: </b>{download.size()}"
             if download.message.chat.type != 'private':
                 uname =download.message.from_user.first_name
+                msg += f"\n<b>├👤Source :</b> ️<code>{download.message.from_user.first_name}</code>"
                 msg += f'\n<b>├🧿 Source ID: </b> <code>{download.message.from_user.id}</code>'
             else:
                 msg += ''
