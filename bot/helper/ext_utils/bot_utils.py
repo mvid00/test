@@ -172,7 +172,7 @@ def get_readable_message():
                 msg += f'\n<b>├🧿 Source ID: </b> <code>{download.message.from_user.id}</code>'
             else:
                 msg += ''
-            msg += f"\n<b>╰❎ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"<br>
+            msg += f"\n<b>╰❎ Cancel: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"<br/>
             msg += f"\n<b>[~~☢️MOVIEHUBBD☢️~~]</b>"
             msg += "\n\n"
             if STATUS_LIMIT is not None and index == STATUS_LIMIT:
