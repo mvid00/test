@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "clone-moviehub-service",
+  "private_key_id": "587f64a8058898555a4506af879729da6c565029",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCke3R3AxRYFz39\n7lFa8XEdAs9PEXem5X2tUYLinoeYGbl/n+Yi4YbeghGnDOJWzCzGhlR0d1T2Ooo/\n8OHHC+jrMwBGbHlHcJ/0W5h07w595fUmJj5eUzEQZkudCpENP+cm0lLYiYPWgILs\n0GHFAD4aMfJ5l8DNqrFL5a1IVibjXk1VghYFUg6p0F3Zj7B5hQDSNZjGe/SbGl77\nkihxrKqN9cFZmrd4ItqUcC+8hWPF6vdRfq8VsOy7iIpGAdqsV6ACGJB9o99XJS3H\nUkIf7ixsAoidjMBvuP7DU1F38TBlKs4bKTrEiSyx3k5u7LzAfGURA9vJnQ5REzdj\n4VpU0mqjAgMBAAECggEAFm7DS2iknCpjU+AZFrr/edJEctyyLGrNMVerbvvps1FY\nLsigiwOmMMTy4mJ2oMQ3m8XTUTpl4IUgY33B/93Ry6NzjKdGV9DLnU3muj/7rSkG\nk8g7JliDRGDR5t5Q5R/g3Ixqgcoo1xbvhEZxUdG+0TTHBKqxQCY2XbW6jzc3a40x\n/ZLGvoqir16kABTp4pX0sdW6wm9cE+pasAvlJGvmSJO1b3sxx5gHY/GBrJvLerhP\n5DGlau66HufqmtE7IexZmEuvSIzqP3WLYzhjhz0GdaeBS6xxFujN3Ls6essO1rdf\nZVHWZWYPvwlwt9M6PvriZYTaPGNCG2GAFtcgDN6znQKBgQDebeR3UQ6Xzyb91UhU\nySH00V5J0Dwbe+FpFo9YxWzDu1XmIJlwgJ1FWK/tNesU9B28AXpd/fG2coBzHogo\nx0TzOdOqstMThMGlJYHIZ8BPBwzHHQWNWWk4tEsJn0QO3/5IAXCigIJ/NLjgqmvO\nZCKlxulwpY8mh4nCU+Cr72wPvwKBgQC9TqKjKvhzgfvdkZUpuXOeCpOS85Kj1i4G\ns0SzIKkg3qAVyd0hGYZAbqxcQutvt+RiipPZWxtfigWxnoDhaTR3XfWQX2Qaj2Xt\n/ZUcAuNkWL7aIhdaUzrR0dexvyavbfpf5uLCDllQIUYuqJqXcqJth/YKqSjnmhSE\nGo0B21PeHQKBgDg16VDF6TwwG5h2N+tFURF/f6aDu0zux445J0y1x8DHLPQVNPGb\nbyNBQGRgBeKrtn/2l6f9LwJ+eTuecaZshV46NOWkf3clS5KioeO1ZIIUNAR1rxuD\nhvXPik8KMrbXoHkt8/r9Iv1mo3oTV183KxJd7EyNalnAUu4LKHIK9XIdAoGAC2R4\nFSm42fqwlZz1RRWMB67LQsS1xnZVPsH7GGyWwQukxqrnS96lXatLZCIC2S5P6D4+\nt43sD8vWm+HWD7qtFaHp7U5QT+jhUXk5R/5EgP12PtpeXWk02Puv51qBkX0k3DCg\n5NzIMzJNbvFmnEahz8Wm4O1dMNLs+SY/5iS032ECgYAHIIhcgdlOblryqjAles7j\nYmeGM0Spe7Nt7odU7g8YtHSJFvLamFITgSCofKfUSGdt1oOJRiqvS88O1s5DpbKT\n8x9SJnk9LTzgtHJh5lFioTNQf25i39YXGqeNXscS9rmny8EQqIPO5dnTOq531Cwx\n5HA+Pji8eGH+lh71W6SU2g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "mfc-tsy1u1nwcbjzls3-jw1bbxr96r@clone-moviehub-service.iam.gserviceaccount.com",
+  "client_id": "105864659587017028807",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mfc-tsy1u1nwcbjzls3-jw1bbxr96r%40clone-moviehub-service.iam.gserviceaccount.com"
+}
