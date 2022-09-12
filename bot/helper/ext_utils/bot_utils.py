@@ -16,7 +16,7 @@ MAGNET_REGEX = r"magnet:\?xt=urn:btih:[a-zA-Z0-9]*"
 URL_REGEX = r"(?:(?:https?|ftp):\/\/)?[\w/\-?=%.]+\.[\w/\-?=%.]+"
 
 COUNT = 0
-PAGE_NO = 1
+PAGE_NO = 3
 EMOJI_THEME=True
 
 class MirrorStatus:
