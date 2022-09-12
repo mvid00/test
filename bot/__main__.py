@@ -153,7 +153,7 @@ Hei, Need Help!!
 '''
 try:
     help = telegraph.create_page(
-        title='Helios-Mirror Help',
+        title='Moviehubbd-Mirror Help',
         content=help_string_telegraph,
     )["path"]
 except Exception as err:
